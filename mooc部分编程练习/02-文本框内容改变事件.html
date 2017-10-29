@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>文本框内容改变事件</title>
+		<script type="text/javascript">
+			function message(){
+				alert("您触发了文本框内容改变事件");
+			}
+		</script>
+	</head>
+	<body>
+		<form>个人简介：<br>
+		<textarea name="summary" cols="60" rows="5" onchange="message()">请输入您的个人信息！</textarea>
+		</form>
+	</body>
+</html>

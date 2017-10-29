@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.all{
+				width: 1200px;
+				height: 500px;
+				/*border: 1px solid #000;*/
+				margin: 80px auto;
+				position: relative;
+			}
+			
+			.main {
+				list-style: none;
+			}
+			
+			.main li {
+				position: absolute;
+				top: 0;
+				left: 200px;
+				width: 100%;
+				
+			}
+			
+			.main li img{
+				width: 100%;
+				height: 100%;
+			}
+			
+			/*注意不要给这个样式,不然会限制住*/
+			/*.adLeftRight {
+				display: none;
+			}*/
+			
+			.adLeft {
+				position: absolute;
+				left: 0;
+				top: 50%;
+				margin-top: -50px;
+				width: 80px;
+				height: 100px;
+				background: url(../img/prev.png) no-repeat;
+				z-index: 5;
+				cursor: pointer;
+			}
+			
+			.adRight {
+				position: absolute;
+				right: 0;
+				top: 50%;
+				margin-top: -50px;
+				width: 80px;
+				height: 100px;
+				background: url(../img/next.png) no-repeat;
+				z-index: 5;
+				cursor: pointer;
+			}
+		</style>
+		
+		<script src="jquery1.0.0.3.js"></script>
+		<script src="jsXZ.js"></script>
+	</head>
+	<body>
+		
+	<div class="all">
+		<div class="main-center">
+		<ul class="main">
+			<li><a href="#"><img src="../img/mino1.jpg" /></a></li>
+			<li><a href="#"><img src="../img/mino2.jpg" /></a></li>
+			<li><a href="#"><img src="../img/mino3.jpg" /></a></li>
+			<li><a href="#"><img src="../img/mino4.jpg" /></a></li>
+			<li><a href="#"><img src="../img/mino5.jpg" /></a></li>
+		</ul>
+		</div>
+		<div class="adLeftRight">
+			<span class="adLeft"></span>
+			<span class="adRight"></span>
+		</div>
+		
+	</div>
+	
+		
+	</body>
+</html>
